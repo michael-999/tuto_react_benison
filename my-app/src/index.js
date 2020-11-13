@@ -46,7 +46,8 @@ function Square(props) {
     }
   
     render() {
-      const status = 'LE PROCHAIN PLAYER: X';
+      const status = 'LE PROCHAIN PLAYER:' + (this.state.xisNext
+        ? 'Y' : 'T');
   
       return (
         <div>
